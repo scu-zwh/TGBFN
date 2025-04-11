@@ -1,0 +1,122 @@
+
+# 🧩 Target-Guided Bayesian Flow Networks for Quantitatively Constrained CAD Generation (TGBFN)
+
+[![Paper](https://img.shields.io/badge/Paper-ComingSoon-blue)](https://your-paper-link.com)
+[![License](https://img.shields.io/github/license/yourusername/tgbfn-cad)](./LICENSE)
+[![Python](https://img.shields.io/badge/python-3.8%2B-green)](https://www.python.org/)
+
+This repository contains the official implementation of our **ACM MM 2025** paper:
+
+> **Target-Guided Bayesian Flow Networks for Quantitatively Constrained CAD Generation**
+
+We propose a novel generative framework, **TGBFN**, which enables **precise, constraint-aware parametric CAD sequence generation** under quantitative targets such as surface area and volume. This is the first framework that enables **differentiable Bayesian flow** over discrete-continuous hybrid spaces for CAD design.
+
+---
+
+<p align="center">
+  <img src="assets/illustrate.pdf" width="85%">
+  <br>
+  <em><strong>Figure:</strong> Overview of the proposed Target-Guided Bayesian Flow Network (TGBFN).</em>
+</p>
+
+---
+
+## 🔧 Features
+
+- ✅ **Target-conditioned generative modeling** for CAD sequences  
+- ✅ **Unbiased Bayesian inference** with parallel multi-sample updates  
+- ✅ **Guided Bayesian flow** with theoretical factorization  
+- ✅ **Statistical fidelity via calibrated distribution proximal**  
+- ✅ Supports both **single-condition** and **multi-condition** generation  
+
+---
+
+## 📂 Project Structure
+
+```
+TGBFN/
+├── networks/             # Model definitions for the skeleton network (φ) and guidance network (ψ)
+├── configs/              # YAML configuration files for training and inference
+├── test.py               # Script for testing CAD generation under target constraints
+├── env.yaml              # Conda environment specification
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Environment Setup
+
+```bash
+git clone ...
+cd tgbfn
+conda env create -f env.yaml
+conda activate tgbfn
+```
+
+### 2. Dataset
+
+We release a numerically annotated CAD dataset built upon DeepCAD, enhanced with precise surface area and volume labels. These geometric properties are computed from boundary representation (B-Rep) models using the [PythonOCC](https://github.com/tpaviot/pythonocc-core) engine.
+
+This dataset enables both **single-property** (surface area or volume) and **multi-property** (area + volume) conditioned generation, making it suitable for training and evaluating quantitatively constrained CAD generative models.
+
+📥 Download the dataset here: [https://your-dataset-link.com](https://your-dataset-link.com)
+
+### 3. Train
+
+**Stage 1: Train Skeleton Network**
+
+```bash
+python train.py meta.wandb_project="new_project_name" data.data_root=./data
+```
+
+**Stage 2: Train Conditional Guidance**
+
+```bash
+python train_guidance.py meta.wandb_project="new_project_name" data.data_root=./data/Sample_data_alpha200
+```
+
+---
+
+### 4. Test
+
+```bash
+python test.py load_model="./checkpoints/BFN/last/ema_model.pt" guided_model="./checkpoints/GBF/last/ema_model.pt"
+```
+
+---
+
+### Qualitative Comparison
+
+<p align="center">
+  <img src="assets/cs.pdf" width="90%">
+  <br>
+  <em>Visualization of CAD sequences generated under five area-volume conditions.</em>
+</p>
+
+---
+
+## 📜 Citation
+
+If you find our work helpful, please consider citing:
+
+```bibtex
+@article{your2025tgbfn,
+  title={Target-Guided Bayesian Flow Networks for Quantitatively Constrained CAD Generation},
+  author={Your Name et al.},
+  journal={ACM Multimedia},
+  year={2025}
+}
+```
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+
+---
+
+## 💬 Contact
+
+For questions or collaborations, feel free to open an issue or contact [yourname@yourdomain.edu](mailto:yourname@yourdomain.edu).

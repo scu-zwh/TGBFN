@@ -1,0 +1,7 @@
+seed: 666
+bfn_config: "./configs/cad_discrete.yaml" 
+load_model: "./checkpoints/BFN/last/ema_model.pt" 
+n_steps: 100 
+save_file: "./samples_cad.pt"
+guided_config: "./configs/cad_guided.yaml" 
+guided_model: "./checkpoints/Sample_data_alpha200_trans_va/valid_t/last/ema_model.pt"

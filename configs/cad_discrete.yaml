@@ -1,0 +1,65 @@
+meta:
+  wandb_project: "guidance_init"
+  neptune:
+  debug: False
+data:
+  dataset: "cad"
+  data_root: "./data"
+  augment: False
+  seq_len: 64
+train_loader:
+  batch_size: 512
+  shuffle: True
+  num_workers: 8
+  pin_memory: True
+  drop_last: True
+val_loader:
+  batch_size: 256
+  shuffle: False
+  num_workers: 8
+  pin_memory: True
+model:
+  net:
+    class_name: "GPT"
+    parameters:
+      vocab_size: 263
+      n_layer: 21
+      n_head: 16
+      n_embd: 1024
+      dropout: 0.0
+      skip: True
+      bias: True
+  input_adapter:
+    class_name: "TextInputAdapter"
+    parameters:
+      vocab_size: 263
+      seq_len: 64
+      output_size: 1024
+      num_conditions: 2  # number of conditions
+      learn_pos_embedding: False
+  output_adapter: null
+  bayesian_flow:
+    class_name: "DiscreteBayesianFlow"
+    parameters:
+      n_classes: 263 
+      max_sqrt_beta: 0.6
+  loss:
+    class_name: "DiscreteBayesianFlowLoss"
+    parameters: {}
+  distribution_factory:
+    class_name: "CategoricalFactory"
+    parameters: {}
+optimizer:
+  lr: 1e-6
+  betas: [0.9, 0.98]
+  weight_decay: 0.01
+training:
+  accumulate: 1
+  checkpoint_interval: 1_000
+  ema_decay: 0.9999
+  grad_clip_norm: 5
+  log_interval: 1
+  max_val_batches: 5
+  n_training_steps: 3_000_000
+  val_interval: 500
+  val_repeats: 1

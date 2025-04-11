@@ -1,0 +1,42 @@
+meta:
+  wandb_project: "Sample_data_alpha200_kl_area"
+  neptune:
+  debug: False
+data:
+  dataset: "cad_guidance"
+  data_root: "./data/Sample_data_alpha200"
+train_loader:
+  batch_size: 2048
+  shuffle: True
+  num_workers: 8
+  pin_memory: True
+  drop_last: True
+val_loader:
+  batch_size: 256
+  shuffle: False
+  num_workers: 8
+  pin_memory: True
+model:
+  class_name: "TextInputClassifier"
+  parameters:
+    vocab_size: 263
+    seq_len: 64
+    output_size: 1024
+    num_conditions: 4 # number of conditions
+    learn_pos_embedding: False
+    has_t: True
+optimizer:
+  lr: 1e-5
+  betas: [0.9, 0.98]
+  weight_decay: 0.01
+training:
+  checkpoint_dir: "./checkpoints/KL_new_area"
+  accumulate: 1
+  checkpoint_interval: 1_000
+  ema_decay: 0.9999
+  grad_clip_norm: 5
+  log_interval: 1
+  max_val_batches: 5
+  n_training_steps: 3_000_000
+  val_interval: 500
+  val_repeats: 1

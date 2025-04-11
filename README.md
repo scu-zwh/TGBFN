@@ -13,7 +13,7 @@ We propose a novel generative framework, **TGBFN**, which enables **precise, con
 ---
 
 <p align="center">
-  <img src="./assets/illustrate.png" width="85%">
+  <img src="./assets/illustrate.png" width="100%">
   <br>
   <em><strong>Figure:</strong> Overview of the proposed Target-Guided Bayesian Flow Network (TGBFN).</em>
 </p>

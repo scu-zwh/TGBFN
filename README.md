@@ -2,7 +2,6 @@
 # 🧩 Target-Guided Bayesian Flow Networks for Quantitatively Constrained CAD Generation (TGBFN)
 
 [![Paper](https://img.shields.io/badge/Paper-ComingSoon-blue)](https://your-paper-link.com)
-[![License](https://img.shields.io/github/license/scu-zwh/TGBFN)](./LICENSE)
 [![Python](https://img.shields.io/badge/python-3.9%2B-green)](https://www.python.org/downloads/release/python-390/)
 
 This repository contains the official implementation of our **ACM MM 2025** paper:

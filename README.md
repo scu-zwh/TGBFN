@@ -75,8 +75,6 @@ python train.py meta.wandb_project="new_project_name" data.data_root=./data
 python train_guidance.py meta.wandb_project="new_project_name" data.data_root=./data/Sample_data_alpha200
 ```
 
----
-
 ### 4. Test
 
 ```bash
@@ -90,12 +88,7 @@ python test.py load_model="./checkpoints/BFN/last/ema_model.pt" guided_model="./
 If you find our work helpful, please consider citing:
 
 ```bibtex
-@article{your2025tgbfn,
-  title={Target-Guided Bayesian Flow Networks for Quantitatively Constrained CAD Generation},
-  author={Your Name et al.},
-  journal={ACM Multimedia},
-  year={2025}
-}
+
 ```
 
 ---

@@ -98,6 +98,11 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE) for det
 
 ---
 
+### 🙏 Acknowledgements
+
+This repository is built upon the codebase of **bayesian-flow-networks[https://github.com/nnaisense/bayesian-flow-networks]**.
+---
+
 ## 💬 Contact
 
 For questions or collaborations, feel free to open an issue or contact [zhengwenhao@stu.scu.edu.cn](mailto:zhengwenhao@stu.scu.edu.cn).

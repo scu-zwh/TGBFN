@@ -25,8 +25,7 @@ We propose a novel generative framework, **TGBFN**, which enables **precise, con
 - ✅ **Target-conditioned generative modeling** for CAD sequences  
 - ✅ **Unbiased Bayesian inference** with parallel multi-sample updates  
 - ✅ **Guided Bayesian flow** with theoretical factorization  
-- ✅ **Statistical fidelity via calibrated distribution proximal**  
-- ✅ Supports both **single-condition** and **multi-condition** generation  
+- ✅ **Statistical fidelity via calibrated distribution estimation**  
 
 ---
 

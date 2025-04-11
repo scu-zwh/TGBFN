@@ -3,7 +3,7 @@
 
 [![Paper](https://img.shields.io/badge/Paper-ComingSoon-blue)](https://your-paper-link.com)
 [![License](https://img.shields.io/github/license/yourusername/tgbfn-cad)](./LICENSE)
-[![Python](https://img.shields.io/badge/python-3.8%2B-green)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/python-3.9%2B-green)](https://www.python.org/downloads/release/python-390/)
 
 This repository contains the official implementation of our **ACM MM 2025** paper:
 
@@ -119,4 +119,4 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE) for det
 
 ## 💬 Contact
 
-For questions or collaborations, feel free to open an issue or contact [yourname@yourdomain.edu](mailto:yourname@yourdomain.edu).
+For questions or collaborations, feel free to open an issue or contact [zhengwenhao@stu.scu.edu.cn](mailto:zhengwenhao@stu.scu.edu.cn).

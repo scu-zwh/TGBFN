@@ -13,7 +13,7 @@ We propose a novel generative framework, **TGBFN**, which enables **precise, con
 ---
 
 <p align="center">
-  <img src="./assets/illustrate.pdf" width="85%">
+  <img src="./assets/illustrate.png" width="85%">
   <br>
   <em><strong>Figure:</strong> Overview of the proposed Target-Guided Bayesian Flow Network (TGBFN).</em>
 </p>
@@ -82,16 +82,6 @@ python train_guidance.py meta.wandb_project="new_project_name" data.data_root=./
 ```bash
 python test.py load_model="./checkpoints/BFN/last/ema_model.pt" guided_model="./checkpoints/GBF/last/ema_model.pt"
 ```
-
----
-
-### Qualitative Comparison
-
-<p align="center">
-  <img src="assets/cs.pdf" width="90%">
-  <br>
-  <em>Visualization of CAD sequences generated under five area-volume conditions.</em>
-</p>
 
 ---
 

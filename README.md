@@ -87,7 +87,7 @@ python test.py load_model="./checkpoints/BFN/last/ema_model.pt" guided_model="./
 If you find our work helpful, please consider citing:
 
 ```bibtex
-comming soon
+coming soon
 ```
 
 ---

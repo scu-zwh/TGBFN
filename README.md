@@ -87,7 +87,22 @@ python test.py load_model="./checkpoints/BFN/last/ema_model.pt" guided_model="./
 If you find our work helpful, please consider citing:
 
 ```bibtex
-coming soon
+@inproceedings{10.1145/3746027.3755052,
+author = {Zheng, Wenhao and Sun, Chenwei and Zhang, Wenbo and Lv, Jiancheng and Liu, Xianggen},
+title = {Target-Guided Bayesian Flow Networks for Quantitatively Constrained CAD Generation},
+year = {2025},
+isbn = {9798400720352},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3746027.3755052},
+doi = {10.1145/3746027.3755052},
+booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia},
+pages = {3330–3339},
+numpages = {10},
+keywords = {Bayesian flow networks, conditional generative modeling, parametric CAD generation},
+location = {Dublin, Ireland},
+series = {MM '25}
+}
 ```
 
 ---

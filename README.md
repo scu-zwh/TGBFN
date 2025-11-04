@@ -46,7 +46,7 @@ TGBFN/
 ### 1. Environment Setup
 
 ```bash
-git clone ...
+git clone https://github.com/scu-zwh/TGBFN
 cd tgbfn
 conda env create -f env.yaml
 conda activate tgbfn

@@ -54,11 +54,11 @@ conda activate tgbfn
 
 ### 2. QuantiCAD Dataset
 
-We release a numerically annotated CAD dataset built upon DeepCAD, enhanced with precise surface area and volume labels. These geometric properties are computed from boundary representation (B-Rep) models using the [PythonOCC](https://github.com/tpaviot/pythonocc-core) engine.
+We introduce **QuantiCAD**, a numerically annotated CAD dataset derived from DeepCAD and augmented with precise surface area and volume annotations. These geometric properties are computed directly from boundary representation (B-Rep) models using the [PythonOCC](https://github.com/tpaviot/pythonocc-core) library.
 
-This dataset enables both **single-property** (surface area or volume) and **multi-property** (area + volume) conditioned generation, making it suitable for training and evaluating quantitatively constrained CAD generative models.
+QuantiCAD supports both **single-property conditioning** (surface area or volume) and **multi-property conditioning** (surface area and volume jointly), providing a valuable resource for training and evaluating quantitatively constrained CAD generative models.
 
-📥 Download the QuantiCAD dataset: [Google Drive.](https://drive.google.com/file/d/1SH3Yh9culvDCaJwUDFCqkrlRCkhRjiYr/view?usp=sharing)
+📥 **Download the [QuantiCAD dataset](https://drive.google.com/file/d/1SH3Yh9culvDCaJwUDFCqkrlRCkhRjiYr/view?usp=sharing).**
 
 ### 3. Train
 

@@ -58,7 +58,7 @@ We release a numerically annotated CAD dataset built upon DeepCAD, enhanced with
 
 This dataset enables both **single-property** (surface area or volume) and **multi-property** (area + volume) conditioned generation, making it suitable for training and evaluating quantitatively constrained CAD generative models.
 
-📥 Download the dataset here: [QuantiCAD download](https://drive.google.com/file/d/1SH3Yh9culvDCaJwUDFCqkrlRCkhRjiYr/view?usp=sharing)
+📥 Download the QuantiCAD dataset: [Google Drive.](https://drive.google.com/file/d/1SH3Yh9culvDCaJwUDFCqkrlRCkhRjiYr/view?usp=sharing)
 
 ### 3. Train
 
